@@ -15,7 +15,7 @@ import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-ALLOWED_HOSTS = ['sefaria-plugin-server-fa7a4262bd1e.herokuapp.com', '*']  # Be sure to restrict this in production!
+ALLOWED_HOSTS = ['sefaria-plugin-server-fa7a4262bd1e.herokuapp.com', '127.0.0.1', 'localhost']
 
 STATIC_URL = '/static/'
 
@@ -23,7 +23,7 @@ STATIC_URL = '/static/'
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('django-insecure-56+h$*+j%4glshz=+h97e1uflst7)x1@^nw7*u2^3r5pi-3u^@', 'your-default-secret-key')
+SECRET_KEY = os.getenv('DJANGO_SECRET', 'your-default-secret-key')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
