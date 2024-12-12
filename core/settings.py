@@ -15,7 +15,7 @@ import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-ALLOWED_HOSTS = ['sefaria-plugin-server-fa7a4262bd1e.herokuapp.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ["*"]
 
 STATIC_URL = '/static/'
 
@@ -27,9 +27,6 @@ SECRET_KEY = os.getenv('DJANGO_SECRET', 'your-default-secret-key')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = []
-
 
 # Application definition
 
