@@ -15,7 +15,7 @@ import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-ALLOWED_HOSTS = ['*']  # Be sure to restrict this in production!
+ALLOWED_HOSTS = ['sefaria-plugin-server-fa7a4262bd1e.herokuapp.com', '*']  # Be sure to restrict this in production!
 
 STATIC_URL = '/static/'
 
